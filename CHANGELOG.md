@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`b9ea7bd`](https://github.com/stdlib-js/stdlib/commit/b9ea7bd1bcd07e3a6be9369d395afdf3d5fe481d) - **chore:** clean-up [(#13723)](https://github.com/stdlib-js/stdlib/pull/13723) _(by Philipp Burckhardt)_
 -   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - **feat:** add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562) _(by Divit Jain, Athan Reines)_
 
 </details>
@@ -34,10 +35,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Divit Jain
+-   Philipp Burckhardt
 
 </section>
 
