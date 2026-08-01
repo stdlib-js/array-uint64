@@ -20,7 +20,7 @@
 
 // TypeScript Version: 4.1
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
 import { ArrayLike, Uint64Array as Uint64ArrayInterface } from '@stdlib/types/array';
