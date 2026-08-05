@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-uint64
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import Uint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint64@deno/mod.js';
+var Uint64Array = require( '@stdlib/array-uint64' );
 ```
 
 #### Uint64Array()
@@ -78,7 +96,7 @@ var arr = new Uint64Array( 5 );
 Creates a 64-bit unsigned integer array from another [typed array][mdn-typed-array].
 
 ```javascript
-import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
+var Uint32Array = require( '@stdlib/array-uint32' );
 
 var arr1 = new Uint32Array( [ 5, 5, 5 ] );
 var arr2 = new Uint64Array( arr1 );
@@ -99,7 +117,7 @@ var arr = new Uint64Array( [ 5.0, 5.0, 5.0 ] );
 Returns a 64-bit unsigned integer array view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var buf = new ArrayBuffer( 32 );
 var arr = new Uint64Array( buf, 0, 4 );
@@ -293,6 +311,44 @@ z = arr.at( -100 );
 // returns undefined
 ```
 
+<a name="method-entries"></a>
+
+#### Uint64Array.prototype.entries()
+
+Returns an iterator for iterating over array key-value pairs.
+
+```javascript
+var Uint64 = require( '@stdlib/number-uint64-ctor' );
+
+var arr = [
+    new Uint64( 1 ),
+    new Uint64( 2 ),
+    new Uint64( 3 )
+];
+arr = new Uint64Array( arr );
+
+// Create an iterator:
+var it = arr.entries();
+
+// Iterate over the key-value pairs...
+var v = it.next().value;
+// returns [ 0, <Uint64>[ 1n ] ]
+
+v = it.next().value;
+// returns [ 1, <Uint64>[ 2n ] ]
+
+v = it.next().value;
+// returns [ 2, <Uint64>[ 3n ] ]
+
+var bool = it.next().done;
+// returns true
+```
+
+The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the following properties:
+
+-   **next**: function which returns an [iterator][mdn-iterator-protocol] protocol-compliant object containing the next iterated value (if one exists) assigned to a `value` property and a `done` property having a `boolean` value indicating whether the [iterator][mdn-iterator-protocol] is finished.
+-   **return**: function which closes an [iterator][mdn-iterator-protocol] and returns a single (optional) argument in an [iterator][mdn-iterator-protocol] protocol-compliant object.
+
 <a name="method-get"></a>
 
 #### Uint64Array.prototype.get( i )
@@ -326,7 +382,7 @@ var z = arr.get( 100 );
 Sets one or more array elements.
 
 ```javascript
-import Uint64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint64-ctor@deno/mod.js';
+var Uint64 = require( '@stdlib/number-uint64-ctor' );
 
 var arr = new Uint64Array( [ 1, 2, 3 ] );
 // returns <Uint64Array>[ 1n, 2n, 3n ]
@@ -346,7 +402,7 @@ z = arr.get( 0 );
 By default, the method sets array elements starting at position (index) `i = 0`. To set elements starting elsewhere in the array, provide an index argument `i`.
 
 ```javascript
-import Uint64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint64-ctor@deno/mod.js';
+var Uint64 = require( '@stdlib/number-uint64-ctor' );
 
 var arr = new Uint64Array( [ 1, 2, 3 ] );
 // returns <Uint64Array>[ 1n, 2n, 3n ]
@@ -366,7 +422,7 @@ z = arr.get( 2 );
 In addition to providing a scalar value (e.g., nonnegative integer, [`bigint`][@stdlib/bigint/ctor], or [`Uint64`][@stdlib/number/uint64/ctor]), to set one or more array elements, provide an array-like object containing scalar values
 
 ```javascript
-import Uint64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint64-ctor@deno/mod.js';
+var Uint64 = require( '@stdlib/number-uint64-ctor' );
 
 var arr = new Uint64Array( [ 1, 2, 3 ] );
 // returns <Uint64Array>[ 1n, 2n, 3n ]
@@ -423,10 +479,10 @@ A few notes:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Uint64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint64-ctor@deno/mod.js';
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
-import Uint64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint64@deno/mod.js';
+var Uint64 = require( '@stdlib/number-uint64-ctor' );
+var logEach = require( '@stdlib/console-log-each' );
+var Uint32Array = require( '@stdlib/array-uint32' );
+var Uint64Array = require( '@stdlib/array-uint64' );
 
 // Create a 64-bit unsigned integer array by specifying a length:
 var out = new Uint64Array( 3 );
@@ -486,7 +542,7 @@ logEach( '%s', out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -549,15 +605,17 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-uint64/main/LICENSE
 
+[mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
+
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/deno
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/deno
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/number/uint64/ctor]: https://github.com/stdlib-js/number-uint64-ctor/tree/deno
+[@stdlib/number/uint64/ctor]: https://github.com/stdlib-js/number-uint64-ctor
 
-[@stdlib/bigint/ctor]: https://github.com/stdlib-js/bigint-ctor/tree/deno
+[@stdlib/bigint/ctor]: https://github.com/stdlib-js/bigint-ctor
 
 </section>
 
