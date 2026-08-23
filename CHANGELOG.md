@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-14)
+## Unreleased (2026-08-23)
 
 <section class="features">
 
@@ -18,12 +18,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`d56bea5`](https://github.com/stdlib-js/stdlib/commit/d56bea50ea36c6860b8441d83a57c9b6e2f020b4) - correctly copying collection values and use correct assertion utility
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`d56bea5`](https://github.com/stdlib-js/stdlib/commit/d56bea50ea36c6860b8441d83a57c9b6e2f020b4) - **fix:** correctly copying collection values and use correct assertion utility _(by Athan Reines)_
 -   [`ad9d109`](https://github.com/stdlib-js/stdlib/commit/ad9d1092d73c1635a10bb0ac4400c92dd50722eb) - **chore:** clean-up [(#13949)](https://github.com/stdlib-js/stdlib/pull/13949) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b5ff3b6`](https://github.com/stdlib-js/stdlib/commit/b5ff3b66fe639b073761be77dfe1a3b57773d6f6) - **feat:** add `entries` method to `array/uint64` [(#13888)](https://github.com/stdlib-js/stdlib/pull/13888) _(by Divit Jain, Athan Reines)_
 -   [`24405b6`](https://github.com/stdlib-js/stdlib/commit/24405b647f170b8737700ebc9d08752bd5cc1ea5) - **feat:** add `at` method to `array/uint64` [(#13830)](https://github.com/stdlib-js/stdlib/pull/13830) _(by Divit Jain)_
