@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-25)
+## Unreleased (2026-08-30)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`0c75f5d`](https://github.com/stdlib-js/stdlib/commit/0c75f5d9baf7377723b8dde71ec9116c8b8cee16) - **docs:** update related packages sections [(#14793)](https://github.com/stdlib-js/stdlib/pull/14793) _(by stdlib-bot)_
 -   [`ad8d282`](https://github.com/stdlib-js/stdlib/commit/ad8d282c031255d1215c4a2a50d1232e1d7fe0ad) - **test:** add test cases _(by Athan Reines)_
 -   [`d56bea5`](https://github.com/stdlib-js/stdlib/commit/d56bea50ea36c6860b8441d83a57c9b6e2f020b4) - **fix:** correctly copying collection values and use correct assertion utility _(by Athan Reines)_
 -   [`ad9d109`](https://github.com/stdlib-js/stdlib/commit/ad9d1092d73c1635a10bb0ac4400c92dd50722eb) - **chore:** clean-up [(#13949)](https://github.com/stdlib-js/stdlib/pull/13949) _(by Philipp Burckhardt, Athan Reines)_
