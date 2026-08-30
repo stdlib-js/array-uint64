@@ -45,32 +45,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-uint64
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var Uint64Array = require( '@stdlib/array-uint64' );
+Uint64Array = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint64@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var Uint64Array = require( 'path/to/vendor/umd/array-uint64/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint64@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.Uint64Array;
+})();
+</script>
 ```
 
 #### Uint64Array()
@@ -476,11 +482,16 @@ A few notes:
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Uint64 = require( '@stdlib/number-uint64-ctor' );
-var logEach = require( '@stdlib/console-log-each' );
-var Uint32Array = require( '@stdlib/array-uint32' );
-var Uint64Array = require( '@stdlib/array-uint64' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint64-ctor@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint64@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Create a 64-bit unsigned integer array by specifying a length:
 var out = new Uint64Array( 3 );
@@ -509,6 +520,11 @@ logEach( '%s', out );
 arr = new Uint32Array( [ 1, 2, 3, 4, 5, 6, 7, 8 ] );
 out = new Uint64Array( arr.buffer, 16, 2 );
 logEach( '%s', out );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -627,43 +643,43 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/umd
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/umd
 
-[@stdlib/number/uint64/ctor]: https://github.com/stdlib-js/number-uint64-ctor
+[@stdlib/number/uint64/ctor]: https://github.com/stdlib-js/number-uint64-ctor/tree/umd
 
-[@stdlib/bigint/ctor]: https://github.com/stdlib-js/bigint-ctor
+[@stdlib/bigint/ctor]: https://github.com/stdlib-js/bigint-ctor/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/array/bool]: https://github.com/stdlib-js/array-bool
+[@stdlib/array/bool]: https://github.com/stdlib-js/array-bool/tree/umd
 
-[@stdlib/array/float16]: https://github.com/stdlib-js/array-float16
+[@stdlib/array/float16]: https://github.com/stdlib-js/array-float16/tree/umd
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/umd
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
 
-[@stdlib/array/int64]: https://github.com/stdlib-js/array-int64
+[@stdlib/array/int64]: https://github.com/stdlib-js/array-int64/tree/umd
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/umd
 
-[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16
+[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16/tree/umd
 
-[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8
+[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8/tree/umd
 
-[@stdlib/array/uint16]: https://github.com/stdlib-js/array-uint16
+[@stdlib/array/uint16]: https://github.com/stdlib-js/array-uint16/tree/umd
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
 
-[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8/tree/umd
 
-[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c/tree/umd
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/umd
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd
 
 <!-- </related-links> -->
 
