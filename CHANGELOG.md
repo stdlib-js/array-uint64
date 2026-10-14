@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-13)
+## Unreleased (2026-10-14)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`a800ae0`](https://github.com/stdlib-js/stdlib/commit/a800ae09acaf3af1ddc728ed50228189181795a7) - **docs:** fix examples and notes [(#16144)](https://github.com/stdlib-js/stdlib/pull/16144) _(by Philipp Burckhardt)_
 -   [`acc3ee3`](https://github.com/stdlib-js/stdlib/commit/acc3ee32ee4296e6b129ee6a6991283342367ec7) - **refactor:** move repeated logic to internal helper [(#14495)](https://github.com/stdlib-js/stdlib/pull/14495) _(by Divit Jain, Athan Reines)_
 -   [`0c75f5d`](https://github.com/stdlib-js/stdlib/commit/0c75f5d9baf7377723b8dde71ec9116c8b8cee16) - **docs:** update related packages sections [(#14793)](https://github.com/stdlib-js/stdlib/pull/14793) _(by stdlib-bot)_
 -   [`ad8d282`](https://github.com/stdlib-js/stdlib/commit/ad8d282c031255d1215c4a2a50d1232e1d7fe0ad) - **test:** add test cases _(by Athan Reines)_
