@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-14)
+## Unreleased (2026-11-03)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`a800ae0`](https://github.com/stdlib-js/stdlib/commit/a800ae09acaf3af1ddc728ed50228189181795a7) - **docs:** fix examples and notes [(#16144)](https://github.com/stdlib-js/stdlib/pull/16144) _(by Philipp Burckhardt)_
 -   [`acc3ee3`](https://github.com/stdlib-js/stdlib/commit/acc3ee32ee4296e6b129ee6a6991283342367ec7) - **refactor:** move repeated logic to internal helper [(#14495)](https://github.com/stdlib-js/stdlib/pull/14495) _(by Divit Jain, Athan Reines)_
 -   [`0c75f5d`](https://github.com/stdlib-js/stdlib/commit/0c75f5d9baf7377723b8dde71ec9116c8b8cee16) - **docs:** update related packages sections [(#14793)](https://github.com/stdlib-js/stdlib/pull/14793) _(by stdlib-bot)_
