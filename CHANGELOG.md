@@ -41,6 +41,7 @@
 
 <details>
 
+-   [`9880230`](https://github.com/stdlib-js/stdlib/commit/988023056a9a8ba063d8e7cacc1ca864023de05f) - **test:** fix description [(#16625)](https://github.com/stdlib-js/stdlib/pull/16625) _(by Philipp Burckhardt)_
 -   [`355c33d`](https://github.com/stdlib-js/stdlib/commit/355c33d2f29c7aab23189fcfa40b5b91d6c6a547) - **feat:** add `findLast` method to `array/uint64` [(#15080)](https://github.com/stdlib-js/stdlib/pull/15080) _(by Divit Jain, Athan Reines)_
 -   [`cfe86c9`](https://github.com/stdlib-js/stdlib/commit/cfe86c904c8444366325368310ff1b032af7f47b) - **feat:** add `findIndex` method to `array/uint64` [(#14298)](https://github.com/stdlib-js/stdlib/pull/14298) _(by Divit Jain, Athan Reines)_
 -   [`2e62f0a`](https://github.com/stdlib-js/stdlib/commit/2e62f0a06fdcc2be4edb82b137eff0b635cdedc6) - **feat:** add `find` method to `array/uint64` [(#14270)](https://github.com/stdlib-js/stdlib/pull/14270) _(by Divit Jain, Athan Reines)_
