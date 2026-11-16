@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-14)
+## Unreleased (2026-11-16)
 
 <section class="features">
 
@@ -16,7 +16,7 @@
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251)
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173)
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146)
--   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940)
+-   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - add `copyWithin` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940)
 -   [`b5ff3b6`](https://github.com/stdlib-js/stdlib/commit/b5ff3b66fe639b073761be77dfe1a3b57773d6f6) - add `entries` method to `array/uint64` [(#13888)](https://github.com/stdlib-js/stdlib/pull/13888)
 -   [`24405b6`](https://github.com/stdlib-js/stdlib/commit/24405b647f170b8737700ebc9d08752bd5cc1ea5) - add `at` method to `array/uint64` [(#13830)](https://github.com/stdlib-js/stdlib/pull/13830)
 -   [`382f2ca`](https://github.com/stdlib-js/stdlib/commit/382f2ca82ee11fc125f8162d3b5109793fd95994) - add `array/uint64` [(#12562)](https://github.com/stdlib-js/stdlib/pull/12562)
@@ -48,7 +48,7 @@
 -   [`fe61b90`](https://github.com/stdlib-js/stdlib/commit/fe61b90b220779f628444d8cefd9ef0d7751faae) - **feat:** add `filter` method to `array/uint64` [(#14251)](https://github.com/stdlib-js/stdlib/pull/14251) _(by Divit Jain, Athan Reines)_
 -   [`21f4296`](https://github.com/stdlib-js/stdlib/commit/21f4296680152d58a4372c021b66a91bd566c304) - **feat:** add `fill` method to `array/uint64` [(#14173)](https://github.com/stdlib-js/stdlib/pull/14173) _(by Divit Jain, Athan Reines)_
 -   [`7d36694`](https://github.com/stdlib-js/stdlib/commit/7d366942eabec37ee94a7e958c76de4b0bec9477) - **feat:** add `every` method to `array/uint64` [(#14146)](https://github.com/stdlib-js/stdlib/pull/14146) _(by Divit Jain)_
--   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - **feat:** add `copyWithIn` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940) _(by Divit Jain)_
+-   [`7d6191b`](https://github.com/stdlib-js/stdlib/commit/7d6191b9dc76d9f4aeefccb43672ed2fd81384f2) - **feat:** add `copyWithin` method to `array/uint64` [(#13940)](https://github.com/stdlib-js/stdlib/pull/13940) _(by Divit Jain)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`a800ae0`](https://github.com/stdlib-js/stdlib/commit/a800ae09acaf3af1ddc728ed50228189181795a7) - **docs:** fix examples and notes [(#16144)](https://github.com/stdlib-js/stdlib/pull/16144) _(by Philipp Burckhardt)_
 -   [`acc3ee3`](https://github.com/stdlib-js/stdlib/commit/acc3ee32ee4296e6b129ee6a6991283342367ec7) - **refactor:** move repeated logic to internal helper [(#14495)](https://github.com/stdlib-js/stdlib/pull/14495) _(by Divit Jain, Athan Reines)_
